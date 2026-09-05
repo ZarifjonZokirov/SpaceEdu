@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Foydalanuvchi profil ma'lumotlari",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Foydalanuvchi unikal identifikatori"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Google hisobidagi yoki foydalanuvchi ismi"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Google hisobi elektron pochtasi"
+        },
+        "photoURL": {
+          "type": "string",
+          "description": "Foydalanuvchi avatar rasmi"
+        },
+        "spaceRole": {
+          "type": "string",
+          "description": "Foydalanuvchining kosmik unvoni"
+        },
+        "favoritePlanet": {
+          "type": "string",
+          "description": "Sevimli sayyorasi"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Profil yaratilgan vaqt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Profil yangilangan vaqt"
+        }
+      },
+      "required": ["uid", "displayName", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Har bir ro'yxatdan o'tgan foydalanuvchining shaxsiy profili"
+    }
+  }
+}

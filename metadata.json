@@ -1,0 +1,6 @@
+{
+  "name": "SpaceEdu",
+  "description": "SpaceEdu - O'zbekistondagi interaktiv astronomiya va koinot ta'limi platformasi: sayyoralar ensiklopediyasi, solishtirish, koinot kalkulyatori, orbita simulyatori va viktorinalar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
